@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 xRange = np.arange(0.0,2.0,0.01)
-sinGraph = np.sin(2*np.pi*xRange)
+sinGraph = 2*np.sin((np.pi/4)*xRange)
 
 plt.plot(xRange,sinGraph)
 
