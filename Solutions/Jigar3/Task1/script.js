@@ -42,6 +42,8 @@ request({
     var description = h2p(body[i].description);
     console.log(`Description: ${description}`)
     console.log(`Company: ${body[i].company}`);
+    var howTo = h2p(body[i].how_to_apply);
+    console.log(`How to apply: ${howTo}`);
     console.log(`-------------------------------------------`)
   }
 }
