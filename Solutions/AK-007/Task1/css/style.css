@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+html {
+  background-color: #252627;
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  color: #197278;
+  font-family: "Audiowide", cursive;
+  font-weight: 800;
+  font-size: 50px;
+}
+input {
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  background-color: #edddd4;
+  padding: 15px;
+  width: 300px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin: 10px;
+}
+form {
+  position: relative;
+  text-align: center;
+}
+.foot {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  margin-top: 400px;
+}
+button {
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 100px;
+  cursor: pointer;
+  background-color: #c44536;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin-left: 1px;
+  margin-top: 30px;
+}
+.set {
+  padding: 5px;
+  margin: 10px;
+  background-color: #eceeed;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.result {
+  position: relative;
+}
+.title {
+  color: #383a39;
+}
+.company {
+  color: #0b3c49;
+}
+.desc {
+  color: #6987c9;
+}
+a:link {
+  color: #bf211e;
+}
+a:link,
+a:hover,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+a:hover {
+  color: #9d44b5;
+}
