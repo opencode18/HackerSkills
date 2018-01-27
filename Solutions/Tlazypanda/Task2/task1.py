@@ -9,11 +9,11 @@ loc = raw_input()
 link="https://jobs.github.com/positions.json?description="+jd+"&location="+loc
 jobobj = requests.get(link)
 
-object = json.loads(jobobj.text)
+object1 = json.loads(jobobj.text)
 
-if (object):
+if (object1):
     j=1
-    for i in object:
+    for i in object1:
         print("Job " + str(j) + " ==>\n")
         print("Title: " + i['title'] + "\n")
         print("Date added: " + i['created_at'] + "\n")
