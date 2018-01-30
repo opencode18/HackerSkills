@@ -1,8 +1,8 @@
 import bs4 as bs
-import urllib.request
+import requests
 
-source = urllib.request.urlopen('https://scirate.com/').read()
-page = bs.BeautifulSoup(source, 'lxml')
+source = requests.get('https://scirate.com/')
+page = bs.BeautifulSoup(source.text, 'lxml')
 
 names = page.find_all('div', class_='title')
 links = page.find_all('a', class_ = 'paper-download btn btn-success')
