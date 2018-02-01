@@ -2,7 +2,7 @@ from wordcloud import WordCloud, STOPWORDS
 import matplotlib
 import matplotlib.pyplot as plt
 
-%matplotlib inline
+% matplotlib inline
 matplotlib.rcParams['figure.figsize'] = (16.0, 9.0)
 
 # Reading the script
