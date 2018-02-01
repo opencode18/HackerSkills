@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 description = input("Enter Description: ")
 location = input("Enter Location: ")
 
-url = "https://jobs.github.com/positions?description=" + "python" + "&location=" + "new+york"
+url = "https://jobs.github.com/positions?description=" + description + "&location=" + location
 resp = requests.get(url)
 
 html = resp.text
