@@ -3,6 +3,10 @@ from bs4 import BeautifulSoup
 
 description = input("Enter Description: ")
 location = input("Enter Location: ")
+loc = list(location.split(" "))
+location = ""
+for str in loc:
+    location += "+" + str
 
 url = "https://jobs.github.com/positions?description=" + description + "&location=" + location
 resp = requests.get(url)
