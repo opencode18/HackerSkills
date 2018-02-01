@@ -5,8 +5,8 @@ description = input("Enter Description: ")
 location = input("Enter Location: ")
 loc = list(location.split(" "))
 location = ""
-for str in loc:
-    location += "+" + str
+for loc_element in loc:
+    location += "+" + loc_element
 
 url = "https://jobs.github.com/positions?description=" + description + "&location=" + location
 resp = requests.get(url)
