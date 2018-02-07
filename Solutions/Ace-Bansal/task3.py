@@ -2,7 +2,7 @@ import bs4 as bs;
 import requests;
 
 source=requests.get('https://scirate.com/');
-pageHTML=BeautifulSoup(source.content,"html.parser");
+pageHTML=bs.BeautifulSoup(source.content,"html.parser");
 
 articleTitle=pageHTML.find_all('div',class_='title');
 articleLink=pageHTML.find_all('a',attrs={'title': "Download PDF"});
