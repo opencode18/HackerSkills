@@ -5,7 +5,6 @@ from PIL import Image
 import numpy as np
 
 
-dir = os.path.dirname(__file__)
 
 
 def wiki(query):
@@ -15,11 +14,11 @@ def wiki(query):
 
 
 def word_cloud(text):
-    mask = np.array(Image.open(os.path.join(dir, 'dc.jpg')))
+    mask = np.array(Image.open('dc.jpg'))
     stop_words = set(STOPWORDS)
     wc = WordCloud(background_color = 'white', mask = mask, max_words = 200, stopwords = stop_words)
     wc.generate(text)
-    wc.to_file(os.path.join(dir, 'wc.png'))
+    wc.to_file('wc.png')
 
 
 word_cloud(wiki('Dunkirk (2017 film)'))
